@@ -3,34 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <title>Punimet e mia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            text-align: center;
+            padding: 40px;
+        }
+        h1 {
+            color: #005b96;
+        }
+        a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+        .section {
+            background-color: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 700px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .gallery img {
+            width: 300px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+            box-shadow: 0 0 8px rgba(0,0,0,0.2);
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
-<body style="font-family: Arial; text-align: center; padding: 50px; background-color: #f9f9f9;">
+<body>
+
     <h1>Punimet e mia</h1>
-    <p>Punime të ndryshme, programe, libra, fletëpalosje.</p>
 
-    <hr>
+    <div class="section">
+        <h2>Libri: Udhëzues për krijimin e një databaze të bibliotekës</h2>
+        <p>
+            Mund ta lexoni këtu:<br>
+            <a href="udhezues-biblioteke.pdf" target="_blank">Lexo librin</a>
+        </p>
+    </div>
 
-    <h2>1. Libri: Udhëzues për krijimin e një databaze të bibliotekës</h2>
-    <p>
-        Mund ta lexoni direkt këtu:<br>
-        <a href="udhezues-biblioteke.pdf" target="_blank">
-            Lexo librin
-        </a>
-    </p>
+    <div class="section">
+        <h2>Programi: Menaxhimi i librarisë</h2>
+        <p>
+            Ky program jepet vetëm me kërkesë. Për ta marrë, kontaktoni:<br>
+            <a href="mailto:gertaferro67@gmail.com?subject=Kerkese per programin">Dërgo email</a>
+        </p>
+    </div>
 
-    <hr>
+    <div class="section">
+        <h2>Fletëpalosje informuese</h2>
+        <div class="gallery">
+            <a href="Fletepalosje%201.jpg" target="_blank">
+                <img src="Fletepalosje%201.jpg" alt="Fletëpalosje 1">
+            </a>
+            <a href="Fletepalosje%202.jpg" target="_blank">
+                <img src="Fletepalosje%202.jpg" alt="Fletëpalosje 2">
+            </a>
+        </div>
+    </div>
 
-    <h2>2. Programi: Menaxhimi i librarisë</h2>
-    <p>
-        Për të marrë akses në program, më kontakto me email:
-        <br>
-        <a href="mailto:kristina@example.com?subject=Kerkese per programin">
-            Dërgo email
-        </a>
-    </p>
+    <p style="color: gray; margin-top: 40px;">&copy; 2025 Kristina Ferro</p>
 
-    <hr>
-
-    <p style="color: gray;">&copy; 2025 Kristina Ferro</p>
 </body>
 </html>
